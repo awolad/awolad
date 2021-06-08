@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Preloader from "./components/preloader";
+import MobileHeader from "./components/headers/mobile";
+import DesktopHeader from "./components/headers/desktop";
+import Home from "./components/sections/home";
+import About from "./components/sections/about";
+import Services from "./components/sections/services";
+import Experience from "./components/sections/experience";
+import Works from "./components/sections/works";
+import Prices from "./components/sections/prices";
+import Testimonials from "./components/sections/testimonials";
+import Blog from "./components/sections/blog";
+import Contact from "./components/sections/contact";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Preloader />
+      <MobileHeader />
+      <DesktopHeader />
+      <main className="content">
+        <Home />
+        <About />
+        <Services />
+        <Experience />
+        <Works />
+        <Prices />
+        <Testimonials />
+        <Blog />
+        <Contact />
+        <div className="spacer" data-height="96"></div>
+      </main>
+    </>
   );
 }
 
