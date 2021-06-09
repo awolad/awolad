@@ -12,7 +12,6 @@ import Contact from "./components/sections/contact";
 // import Testimonials from "./components/sections/testimonials";
 // import Blog from "./components/sections/blog";
 
-
 function App() {
   return (
     <>
