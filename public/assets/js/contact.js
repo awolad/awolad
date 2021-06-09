@@ -35,6 +35,10 @@ $(function () {
             //     }
             // });
 
+            $('#send-btn-area').hide();
+            $('#sending-btn-area').show();
+            $('#submit').prop('disabled', true);
+
             var dataArr = $(this).serializeArray()
 
             var inputNameVal = dataArr.find(data => data.name === 'InputName').value;
@@ -53,6 +57,10 @@ $(function () {
                 message: inputMessageVal,
                 reply_to: inputEmailVal,
             }).then(res => {
+                $('#send-btn-area').show();
+                $('#sending-btn-area').hide();
+                $('#submit').prop('disabled', false);
+
                 // we recieve the type of the message: success x danger and apply it to the 
                 var alertType = res.status === 200 ? 'success' : 'danger'
                 var messageAlert = 'alert-' + alertType;
@@ -67,6 +75,10 @@ $(function () {
                     $('#contact-form')[0].reset();
                 }
             }).catch(_ => {
+                $('#send-btn-area').show();
+                $('#sending-btn-area').hide();
+                $('#submit').prop('disabled', false);
+
                 var messageAlert = 'alert-danger';
                 var messageText = errorAlert;
 

@@ -1,3 +1,5 @@
+import './css/contact.css'
+
 function Contact() {
   return (
     <>
@@ -46,8 +48,16 @@ function Contact() {
                     </div>
                   </div>
                 </div>
-                <button type="submit" name="submit" id="submit" value="Submit" className="btn btn-default">Send
+                <div id="send-btn-area">
+                  <button type="submit" name="submit" id="submit" value="Submit" className="btn btn-default">Send
             Message</button>
+                </div>
+                <div id="sending-btn-area">
+                  <button className="btn btn-default" type="button" disabled>
+                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span className="sending">Sending...</span>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
