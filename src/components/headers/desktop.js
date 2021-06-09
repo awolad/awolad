@@ -1,3 +1,4 @@
+import './css/desktop.css'
 
 function DesktopHeader() {
   return (
@@ -14,13 +15,13 @@ function DesktopHeader() {
             <li><a href="#about"><i className="icon-user-following"></i>About</a></li>
             <li><a href="#services"><i className="icon-briefcase"></i>Services</a></li>
             <li><a href="#experience"><i className="icon-graduation"></i>Experience</a></li>
-            <li><a href="#works"><i className="icon-layers"></i>Works</a></li>
-            <li><a href="#blog"><i className="icon-note"></i>Blog</a></li>
+            {/* <li><a href="#works"><i className="icon-layers"></i>Works</a></li> */}
+            {/* <li><a href="#blog"><i className="icon-note"></i>Blog</a></li> */}
             <li><a href="#contact"><i className="icon-bubbles"></i>Contact</a></li>
           </ul>
         </nav>
         <div className="footer">
-          <span className="copyright">© 2020 Bolby Template.</span>
+          <span className="copyright">© {new Date().getFullYear()} Awolad Hossain.</span>
         </div>
       </header>
     </>

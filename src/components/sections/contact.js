@@ -9,7 +9,7 @@ function Contact() {
             <div className="col-md-4">
               <div className="contact-info">
                 <h3 className="wow fadeInUp">Let's talk about everything!</h3>
-                <p className="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>. 👋</p>
+                <p className="wow fadeInUp">Don't like forms? Send me an <a href="mailto:awolad1122@gmail.com">email</a>. 👋</p>
               </div>
             </div>
             <div className="col-md-8">

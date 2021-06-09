@@ -1,0 +1,10 @@
+.shadow-green {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(52, 168, 83, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(52, 168, 83, 0.5);
+}
+.google-action {
+  width: 40%;
+}
+.alexa-skill {
+  width: 40%;
+}
