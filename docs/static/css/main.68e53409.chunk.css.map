@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/sections/css/home.css","webpack://src/components/sections/css/about.css"],"names":[],"mappings":"AAAA,WACE,SAAU,CACV,iBACF,CCHA,aACE,SAAU,CACV,iBACF","file":"main.68e53409.chunk.css","sourcesContent":[".intro img{\n  width: 25%;\n  border-radius: 50%;\n}\n","img.about-me {\n  width: 70%;\n  border-radius: 8px;\n}\n"]}
